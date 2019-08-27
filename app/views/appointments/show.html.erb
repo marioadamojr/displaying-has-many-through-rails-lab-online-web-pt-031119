@@ -1,6 +1,6 @@
 <h2>Appointments:</h2>
 
 
-  <% @patient.appointments.each do |apt| %>
+  <% @appointments.each do |apt| %>
     <%= apt.datetime %> - <%= link_to apt.doctor.name, doctor_path(apt.doctor) %>
   <% end %>
