@@ -3,6 +3,6 @@
   With Doctor: <%= @patient.doctor %>  <br />
 </p>
 Appointments:
-  <% @doctor.appointments.each do |apt| %>
+  <% @patient.appointments.each do |p| %>
     <%= apt.appointment_datetime.strftime("%B %d, %Y at %H:%M") %> - <%= link_to apt.patient.name, patient_path(apt.patient) %>
   <% end %>
